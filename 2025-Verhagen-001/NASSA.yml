@@ -1,0 +1,123 @@
+id: 2025-Verhagen-001
+nassaVersion: 1.0.0
+moduleType: Submodel
+title: Livestock demography
+moduleVersion: 1.1.0
+contributors:
+ - name: Joyce, Jamie
+   roles: [ "Author", "Copyright Holder"]
+   email: jamie.alexander.joyce@gmail.com
+   orcid: 0000-0002-1825-0097
+ - name: Verhagen, Philip
+   roles: [ "Creator", "Contributor", "Copyright Holder", "Thesis Advisor" ]
+   email: j.w.h.p.verhagen@vu.nl
+   orcid: 0000-0001-8166-122X
+lastUpdateDate: 2025-05-05
+description: >
+  This submodel simulates livestock herd demography and slaughter effects. Initially part of the ROMFARMS model for animal husbandry on the Dutch Roman frontier, it focused on cattle, sheep, and horses. However, the code is adaptable for various animals, regions, and historical periods.
+relatedModules: 
+references:
+  moduleReferences: [ Joyce-2019a, Weijgertse-2020, Joyce-2021, Verhagen-2021 ]
+domainKeywords:
+  regions:
+    - Netherlands 
+  periods: 
+    - Roman period
+  subjects: 
+    - rural economy
+    - animal husbandry
+    - livestock demography
+modellingKeywords:
+  - agent initialisation
+  - parameter initialisation
+  - agent variables
+  - agent behaviour (self)
+  - output visualisation
+programmingKeywords:
+  - Functional
+  - Object-Oriented
+implementations:
+  - language: NetLogo
+    softwareDependencies: 
+    - NetLogo 6.4.0
+inputs:
+  - name: species-type
+    type: string
+    description: animal species, OPTIONAL; for multiple species different rules can be specified if desired
+  - name: alphaA
+    type: floating point
+    description: age of senescence of animal
+  - name: alpha
+    type: floating point
+    description: standard deviation age of senescence
+  - name: NMR
+    type: floating point
+    description: mortality rate of neonatal animals
+  - name: BMR
+    type: floating point
+    description: background natural annual mortality rate of animals
+  - name: FR
+    type: floating point
+    description: fertility rate of female animals
+  - name: YAA
+    type: floating point
+    description: maximum age of young animal
+  - name: AAA
+    type: floating point
+    description: minimum age of adult animal
+  - name: YMR
+    type: floating point
+    description: mortality rate of young animal for slaughter
+  - name: IMR
+    type: floating point
+    description: mortality rate of immature animal for slaughter
+  - name: AMR
+    type: floating point
+    description: mortality rate of adult animal for slaughter
+  - name: animals
+    type: turtle-set
+    description: animals found in livestock herd
+  - name: sex (agent attribute)
+    type: string
+    description: sex of animal (F/M)
+  - name: age (agent attribute)
+    type: integer
+    description: age of animal
+  - name: fertility (agent attribute)
+    type: floating point
+    description: fertility of animal
+  - name: lactating (agent attribute)
+    type: string
+    description: lactation state of animal (Y/N)
+  - name: survivorship (agent attribute)
+    type: floating point
+    default: 1.0
+    description: survivorship of animal
+outputs:
+  - name: pop-list
+    type: integer
+    description: number of animals
+  - name: d-pop 
+    type: integer
+    description: number of animals at end of year
+  - name: d1-pop
+    type: integer
+    description: number of animals at start of year
+  - name: livestock
+    type: turtle-set
+    description: current turtle set of animals
+  - name: pop-growth
+    type: floating point
+    description: herd population growth as the percentage increase or decrease from the previous year
+license: MIT
+
+
+
+
+
+
+
+
+
+
+
