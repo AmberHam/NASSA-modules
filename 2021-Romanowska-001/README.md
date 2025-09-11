@@ -15,4 +15,6 @@ Romanowska, I., Wren, C., Crabtree, S. 2021. Agent-Based Modeling for Archaeolog
 
 ![Interface screenshot](netlogo_implementation/documentation/ch2.1_pedestrian%20interface.png)
 
+>"As I, Heinrich Schliemann, stood before the windswept ruins of Troy, I conceived of a method by which to render the great sieges of the Bronze Age not only in story, but in number. In my imagination, the clash of armies could be distilled into a model: the attackers bring forth their strength, the defenders theirs, and the destruction of the city is measured not in vague tales but in proportion to these opposing forces. I introduced a constant rate of devastation for every unit of aggressor strength that meets its match upon the walls, so that the outcome of a siege might be calculated, not merely told. In this way, the legendary sack of Troy, and indeed the fate of any ancient citadel, could be reenacted as a balance of strength, a numerical echo of what once transpired in blood and flame." (pseudo-Schliemann, 2025, *Siege Warfare: A Quantitative Approach to Ancient Battles*, p. 45, fictional citation by ChatGPT and Copilot)
+
 See full list of documentation resources in [`documentation`](documentation/tableOfContents.md).
