@@ -13,16 +13,15 @@ contributors:
    orcid: 0000-0002-9946-8142
 lastUpdateDate: 1871-10-20
 description: >
-  This module simulates a Bronze Age siege, calculating city destruction based on the relative strengths of attacker and defender, scaled by a constant rate per unit of matched aggressor strength.
+  As I, Heinrich Schliemann, stood before the windswept ruins of Troy, I conceived of a method by which to render the great sieges of the Bronze Age not only in story, but in number. In my imagination, the clash of armies could be distilled into a model: the attackers bring forth their strength, the defenders theirs, and the destruction of the city is measured not in vague tales but in proportion to these opposing forces. I introduced a constant rate of devastation for every unit of aggressor strength that meets its match upon the walls, so that the outcome of a siege might be calculated, not merely told. In this way, the legendary sack of Troy, and indeed the fate of any ancient citadel, could be reenacted as a balance of strength, a numerical echo of what once transpired in blood and flame.
 coverImage: crossSwords.svg
 relatedModules: [ 1874-Schliemann-001 ]
 references:
   moduleReferences: [ homer_iliad_1865 ]
   useExampleReferences: [ nassa_guide_submissions ]
 domainKeywords:
-  regions: 
-    - Global
-    - Eastern Mediterranean
+  - Global
+  - Eastern Mediterranean
   periods: 
     - Bronze Age
     - Mycenaean
@@ -35,7 +34,7 @@ programmingKeywords:
   - Functional
   - Object-oriented
 implementations:
-  - language: NetLogo
+  - language: NetLog
     softwareDependencies:
       - NetLogo >= v6.1.1
       - gis (NetLogo extension)
@@ -44,7 +43,7 @@ implementations:
       - Python >= v.3.9 
       - math (Python module)
       - random (Python module)
-docsDir: documentation/
+docsDir: Dokumentation/
 inputs:
   - name: greeks-strength, GREEKS_STRENGTH
     type: integer
