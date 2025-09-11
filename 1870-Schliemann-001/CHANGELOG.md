@@ -1,3 +1,5 @@
+## 1.1.1
+- Changes for the revised version of the guide, after correcting nassa-hs for checking ORCID as not mandatory.
 ## 1.1.0
 - Adaptation to schema v1.0.0.
 ## 1.0.1
