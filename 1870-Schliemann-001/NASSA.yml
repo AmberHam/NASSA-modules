@@ -44,7 +44,7 @@ implementations:
       - Python >= v.3.9 
       - math (Python module)
       - random (Python module)
-docsDir: Dokumentation/
+docsDir: documentation/
 inputs:
   - name: greeks-strength, GREEKS_STRENGTH
     type: integer
