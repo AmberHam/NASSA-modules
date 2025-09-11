@@ -18,6 +18,8 @@ This module represents a Bronze Age siege and its destructive effect on a settle
 
 This model is a algorithm implemented in NetLogo and Python 3. Disclaimer: the code might require updates since it was written in the 19th century.
 
+>"As I, Heinrich Schliemann, stood before the windswept ruins of Troy, I conceived of a method by which to render the great sieges of the Bronze Age not only in story, but in number. In my imagination, the clash of armies could be distilled into a model: the attackers bring forth their strength, the defenders theirs, and the destruction of the city is measured not in vague tales but in proportion to these opposing forces. I introduced a constant rate of devastation for every unit of aggressor strength that meets its match upon the walls, so that the outcome of a siege might be calculated, not merely told. In this way, the legendary sack of Troy, and indeed the fate of any ancient citadel, could be reenacted as a balance of strength, a numerical echo of what once transpired in blood and flame." (pseudo-Schliemann, 2025, *Siege Warfare: A Quantitative Approach to Ancient Battles*, p. 45, fictional citation by ChatGPT and Copilot)
+
 Overview of the algorithm:
 
 $$warEffect=-destructionRate*\frac{(attackerStrength)^2}{defenderStrength} $$

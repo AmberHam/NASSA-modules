@@ -20,7 +20,7 @@ references:
   moduleReferences: [ homer_iliad_1865 ]
   useExampleReferences: [ nassa_guide_submissions ]
 domainKeywords:
-  regions: 
+  regions:
     - Global
     - Eastern Mediterranean
   periods: 
