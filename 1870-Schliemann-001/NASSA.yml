@@ -35,7 +35,7 @@ programmingKeywords:
   - Functional
   - Object-oriented
 implementations:
-  - language: NetLog
+  - language: NetLogo
     softwareDependencies:
       - NetLogo >= v6.1.1
       - gis (NetLogo extension)
