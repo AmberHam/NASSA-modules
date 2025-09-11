@@ -20,8 +20,9 @@ references:
   moduleReferences: [ homer_iliad_1865 ]
   useExampleReferences: [ nassa_guide_submissions ]
 domainKeywords:
-  - Global
-  - Eastern Mediterranean
+  regions:
+    - Global
+    - Eastern Mediterranean
   periods: 
     - Bronze Age
     - Mycenaean
