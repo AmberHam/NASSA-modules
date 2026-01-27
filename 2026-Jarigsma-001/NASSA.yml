@@ -13,10 +13,12 @@ contributors:
     orcid: 0009-0008-9842-7913
 lastUpdateDate: 
 description: >
-
+This module provides a generic and reusable framework for importing and visualising GIS data in NetLogo. 
+It is designed to illustrate how different types of spatial data can be loaded, interpreted and displayed 
+within a NetLogo environment, without relying on any domain-specific datasets.
 references:
   moduleReferences:
-    - 
+    - Boogers-Daems-2022
 inputs:
   - name: min-patch-xcor, min-patch-ycor, max-patch-xcor, max-patch-ycor (SAMPLE)
     type: integers
