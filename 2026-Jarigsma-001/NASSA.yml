@@ -1,0 +1,55 @@
+id: 2026-Jarigsma-001
+nassaVersion: 1.0.0
+moduleType: Algorithm
+title: 
+moduleVersion: 1.0.0
+contributors:
+  - name: Jarigsma, Amber Esha
+    roles:
+      - Copyright Holder
+      - Author
+      - Creator
+    email: a.e.jarigsma@student.vu.nl
+    orcid: 0009-0008-9842-7913
+lastUpdateDate: 
+description: >
+
+references:
+  moduleReferences:
+    - 
+inputs:
+  - name: min-patch-xcor, min-patch-ycor, max-patch-xcor, max-patch-ycor (SAMPLE)
+    type: integers
+    unit: no specific unit
+    description: >
+      Represents the numeric boundaries of the NetLogo world in terms of
+      patch coordinates (i.e., the lower-left and upper-right corners of the
+      grid).
+  - name: 
+    type: 
+    unit: 
+    description: >
+  
+outputs:
+  - name: landscape-type (SAMPLE)
+    type: string
+    unit: no specific unit
+    description: The name of the landscape category assigned to a patch.
+  - name: 
+    type: 
+    unit: 
+    description: 
+domainKeywords:
+  regions:
+    - global
+  subjects:
+    - 
+modellingKeywords:
+  - 
+programmingKeywords:
+  - 
+implementations:
+  - language: NetLogo
+    softwareDependencies:
+      - NetLogo >= v6.4.0
+license: MIT
