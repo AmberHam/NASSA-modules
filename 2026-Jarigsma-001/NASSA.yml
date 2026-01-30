@@ -1,7 +1,7 @@
 id: 2026-Jarigsma-001
 nassaVersion: 1.0.0
 moduleType: Algorithm
-title: 
+title: Visualising GIS Rasters and Vector Data in NetLogo
 moduleVersion: 1.0.0
 contributors:
   - name: Jarigsma, Amber Esha
@@ -13,41 +13,119 @@ contributors:
     orcid: 0009-0008-9842-7913
 lastUpdateDate: 
 description: >
-This module provides a generic and reusable framework for importing and visualising GIS data in NetLogo. 
-It is designed to illustrate how different types of spatial data can be loaded, interpreted and displayed 
-within a NetLogo environment, without relying on any domain-specific datasets.
+ This module provides a generic and reusable framework for importing and
+  visualising GIS data in NetLogo. It is designed to illustrate how different
+  types of spatial data can be loaded, interpreted, and displayed within a
+  NetLogo environment without relying on any domain-specific datasets.
+  The module supports continuous raster data visualised using colour gradients,
+  binary and categorical raster data visualised using discrete colour
+  assignments, and point-based vector data visualised as turtle agents
+  positioned from GIS coordinates.
 references:
   moduleReferences:
     - Boogers-Daems-2022
 inputs:
-  - name: min-patch-xcor, min-patch-ycor, max-patch-xcor, max-patch-ycor (SAMPLE)
-    type: integers
-    unit: no specific unit
-    description: >
-      Represents the numeric boundaries of the NetLogo world in terms of
-      patch coordinates (i.e., the lower-left and upper-right corners of the
-      grid).
-  - name: 
-    type: 
-    unit: 
-    description: >
-  
-outputs:
-  - name: landscape-type (SAMPLE)
+  - name: Coordinate system filepath (.prj)
     type: string
     unit: no specific unit
-    description: The name of the landscape category assigned to a patch.
-  - name: 
-    type: 
-    unit: 
-    description: 
+    description: >
+      Filepath to a coordinate reference system file loaded using the NetLogo GIS
+      extension. This ensures that raster and vector datasets share a common
+      spatial reference.
+  - name: Continuous raster filepath (.asc)
+    type: string
+    unit: no specific unit
+    description: >
+      Filepath to a raster dataset containing continuous numeric values
+      (e.g. elevation or cost surfaces). Raster values are sampled per patch
+      and visualised using a colour gradient.
+  - name: Continuous raster colour gradient
+    type: list of RGB colour values (integers)
+    unit: no specific unit
+    description: >
+      The module includes a predefined list of RGB colours in the
+      `display-continuous-raster` procedure as a demonstration.
+      Users are expected to modify or replace these RGB values directly
+      in the code to match their own data or visual preferences.
+  - name: Binary raster filepath (.asc)
+    type: string
+    unit: no specific unit
+    description: >
+      Filepath to a raster dataset containing binary values (e.g. 0 and 1).
+      Values are sampled per patch and displayed using two discrete colours.
+  - name: Binary raster colours
+    type: string(s) or integer(s)
+    unit: no specific unit
+    description: >
+      Colour assignments for binary raster values (currently predefined at value 0 = white,
+      value 1 = black). Users are expected to modify or replace these values directly
+      in the code to match their own data or visual preferences.
+  - name: Categorical raster filepath (.asc)
+    type: string
+    unit: no specific unit
+    description: >
+      Filepath to a raster dataset containing categorical integer values
+      representing classes (e.g. land-use or land-cover types). 
+  - name: Categorical colour map
+    type: string(s) or integer(s)
+    unit: no specific unit
+    description: >
+      User-defined mapping between categorical raster values and
+      display colours. Users must manually align categories and colours with
+      their dataset.
+  - name: Point vector filepath (.shp)
+    type: string
+    unit: no specific unit
+    description: >
+      File path to a vector dataset containing point features (e.g. site
+      locations). Each point is visualised as a turtle agent.
+  - name: point-size
+    type: integer
+    unit: no specific unit
+    description: >
+      Size of turtle agents used to represent point vector features in the
+      NetLogo interface.
+  
+outputs:
+  - name: continuous-value
+    type: number
+    unit: no specific unit
+    description: >
+      Numeric value sampled from a continuous raster dataset and assigned
+      to each patch.
+  - name: binary-value
+    type: integer
+    unit: no specific unit
+    description: >
+      Value sampled from a binary raster dataset and assigned to each patch.
+  - name: categorical-value
+    type: integer(s) or string(s)
+    unit: no specific unit
+    description: >
+      Categorical class value sampled from a categorical raster dataset and
+      assigned to each patch.
+  - name: points
+    type: turtle agents
+    unit: no specific unit
+    description: >
+      Agents created from point-based vector features and positioned
+      according to GIS coordinates.
+
+
 domainKeywords:
   regions:
     - global
   subjects:
-    - 
+    - geographic information systems
+    - GIS
+    - spatial data
+    - data visualisation
+    - landscape representation
 modellingKeywords:
-  - 
+  - grid initialisation
+  - environment initialisation
+  - spatial data mapping
+  - visualisation
 programmingKeywords:
   - 
 implementations:
