@@ -1,7 +1,7 @@
 # Visualising GIS Rasters and Vector Data in NetLogo
 *by Amber Esha Jarigsma*  
 
-This module provides a generic and reusable framework for importing and visualising GIS data in NetLogo. It is designed to illustrate how different types of spatial data can be loaded, interpreted and displayed within a NetLogo environment, without relying on any domain-specific datasets.
+This module provides a generic and reusable framework for importing and visualising GIS data in NetLogo. It is designed to illustrate how different types of spatial data can be loaded, interpreted and displayed within a NetLogo environment.
 
 The module supports:
 - **Continuous rasters** (e.g. elevation, cost surfaces), visualised using colour gradients  
