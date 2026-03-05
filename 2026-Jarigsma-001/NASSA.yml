@@ -13,14 +13,10 @@ contributors:
     orcid: 0009-0008-9842-7913
 lastUpdateDate: 2026-03-02
 description: >
- This module provides a generic and reusable framework for importing and
-  visualising GIS data in NetLogo. It is designed to illustrate how different
-  types of spatial data can be loaded, interpreted, and displayed within a
-  NetLogo environment without relying on any domain-specific datasets.
-  The module supports continuous raster data visualised using colour gradients,
+ This module provides a framework for importing and visualising GIS data in NetLogo. 
+  It supports continuous raster data visualised using colour gradients, 
   binary and categorical raster data visualised using discrete colour
-  assignments, and point-based vector data visualised as turtle agents
-  positioned from GIS coordinates.
+  assignments, and point-based vector data visualised as turtle agents.
 references:
   moduleReferences:
     - Boogers-Daems-2022
