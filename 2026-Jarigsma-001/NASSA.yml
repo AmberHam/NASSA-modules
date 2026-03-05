@@ -123,7 +123,8 @@ modellingKeywords:
   - spatial data mapping
   - visualisation
 programmingKeywords:
-  - 
+  - Object-oriented
+  - Nondeterministic
 implementations:
   - language: NetLogo
     softwareDependencies:
